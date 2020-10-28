@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		009DA06B2546608D00FD2A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DA06A2546608D00FD2A07 /* AppDelegate.swift */; };
 		009DA06D2546608D00FD2A07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DA06C2546608D00FD2A07 /* SceneDelegate.swift */; };
-		009DA06F2546608D00FD2A07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DA06E2546608D00FD2A07 /* ViewController.swift */; };
 		009DA0722546608D00FD2A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009DA0702546608D00FD2A07 /* Main.storyboard */; };
 		009DA0742546608E00FD2A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009DA0732546608E00FD2A07 /* Assets.xcassets */; };
 		009DA0772546608E00FD2A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009DA0752546608E00FD2A07 /* LaunchScreen.storyboard */; };
 		009DA0822546608E00FD2A07 /* BLE_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DA0812546608E00FD2A07 /* BLE_SampleTests.swift */; };
 		009DA08D2546608E00FD2A07 /* BLE_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009DA08C2546608E00FD2A07 /* BLE_SampleUITests.swift */; };
+		009DA09F254660FF00FD2A07 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009DA09E254660FE00FD2A07 /* CoreBluetooth.framework */; };
+		00DE53672546740F00A21BBF /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00DE53662546740F00A21BBF /* ExternalAccessory.framework */; };
+		00E2A61F2547E82F005BFA22 /* BLECentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A61E2547E82F005BFA22 /* BLECentralViewController.swift */; };
+		00E2A6242547E844005BFA22 /* BLEPeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A6232547E844005BFA22 /* BLEPeripheralViewController.swift */; };
+		00E2A639254814FD005BFA22 /* GATT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A638254814FD005BFA22 /* GATT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		009DA0672546608D00FD2A07 /* BLE_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009DA06A2546608D00FD2A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009DA06C2546608D00FD2A07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		009DA06E2546608D00FD2A07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		009DA0712546608D00FD2A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		009DA0732546608E00FD2A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009DA0762546608E00FD2A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,12 @@
 		009DA0882546608E00FD2A07 /* BLE_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLE_SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		009DA08C2546608E00FD2A07 /* BLE_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_SampleUITests.swift; sourceTree = "<group>"; };
 		009DA08E2546608E00FD2A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009DA09E254660FE00FD2A07 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		00DE53652546740E00A21BBF /* BLE_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BLE_Sample.entitlements; sourceTree = "<group>"; };
+		00DE53662546740F00A21BBF /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		00E2A61E2547E82F005BFA22 /* BLECentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentralViewController.swift; sourceTree = "<group>"; };
+		00E2A6232547E844005BFA22 /* BLEPeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheralViewController.swift; sourceTree = "<group>"; };
+		00E2A638254814FD005BFA22 /* GATT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GATT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DE53672546740F00A21BBF /* ExternalAccessory.framework in Frameworks */,
+				009DA09F254660FF00FD2A07 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				009DA0802546608E00FD2A07 /* BLE_SampleTests */,
 				009DA08B2546608E00FD2A07 /* BLE_SampleUITests */,
 				009DA0682546608D00FD2A07 /* Products */,
+				009DA09D254660FE00FD2A07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +111,12 @@
 		009DA0692546608D00FD2A07 /* BLE_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				00DE53652546740E00A21BBF /* BLE_Sample.entitlements */,
 				009DA06A2546608D00FD2A07 /* AppDelegate.swift */,
 				009DA06C2546608D00FD2A07 /* SceneDelegate.swift */,
-				009DA06E2546608D00FD2A07 /* ViewController.swift */,
+				00E2A61E2547E82F005BFA22 /* BLECentralViewController.swift */,
+				00E2A6232547E844005BFA22 /* BLEPeripheralViewController.swift */,
+				00E2A638254814FD005BFA22 /* GATT.swift */,
 				009DA0702546608D00FD2A07 /* Main.storyboard */,
 				009DA0732546608E00FD2A07 /* Assets.xcassets */,
 				009DA0752546608E00FD2A07 /* LaunchScreen.storyboard */,
@@ -126,6 +141,15 @@
 				009DA08E2546608E00FD2A07 /* Info.plist */,
 			);
 			path = BLE_SampleUITests;
+			sourceTree = "<group>";
+		};
+		009DA09D254660FE00FD2A07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00DE53662546740F00A21BBF /* ExternalAccessory.framework */,
+				009DA09E254660FE00FD2A07 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009DA06F2546608D00FD2A07 /* ViewController.swift in Sources */,
+				00E2A639254814FD005BFA22 /* GATT.swift in Sources */,
+				00E2A61F2547E82F005BFA22 /* BLECentralViewController.swift in Sources */,
 				009DA06B2546608D00FD2A07 /* AppDelegate.swift in Sources */,
+				00E2A6242547E844005BFA22 /* BLEPeripheralViewController.swift in Sources */,
 				009DA06D2546608D00FD2A07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BLE_Sample/BLE_Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5X79GSR83;
 				INFOPLIST_FILE = BLE_Sample/Info.plist;
@@ -455,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BLE_Sample/BLE_Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5X79GSR83;
 				INFOPLIST_FILE = BLE_Sample/Info.plist;
