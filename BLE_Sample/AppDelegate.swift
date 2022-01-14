@@ -3,7 +3,7 @@
 //  BLE_Sample
 //
 //  Created by 丸山翔 on 2020/10/26.
-// あい
+// あいう
 
 import UIKit
 
